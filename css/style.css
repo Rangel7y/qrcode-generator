@@ -1,0 +1,22 @@
+/* _VARIABLES.SCSS */
+/* VARIABLES */
+:root {
+  --ArmorWash-color: #030303;
+  --WhiteSmoke-color: #F5F5F5;
+  --VeryLightGrey-color: #C7C7C7;
+  --KinglyCloud-color: #DEDEDE;
+  --Grey-color: #787878;
+}
+
+/* _BODY.SCSS */
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* _BODY */
+body {
+  background-color: var(--WhiteSmoke-color);
+}/*# sourceMappingURL=style.css.map */
