@@ -1,0 +1,107 @@
+
+/* QRCODE-CONTAINER */
+#qrcode-ctn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 370px;
+    height: 360px;
+
+    gap: 30px;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 8px 16px;
+    border-radius: 8px;
+
+    background-color: var(--VeryLightGrey-color);
+}
+
+/* QRCODE-DESCRIPTION */
+#qrcode-description{
+    h1, p{
+        text-align: center;
+
+        color: var(--ArmorWash-color);
+    }
+    
+    h1{
+        font-family: 'El Salvador01', sans-serif;
+
+        font-size: 2.8rem;
+    }
+
+    p{
+        margin: 5px;
+
+        font-size: 1.1rem;
+    }
+}
+
+/* QRCODE-FORM */
+#qrcode-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+    width: 325px;
+    height: 180px;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 8px 16px;
+    border-radius: 8px;
+
+    background-color: var(--KinglyCloud-color);
+
+    input,button{
+        width: 90%;
+        height: 40px;
+    }
+
+    input{
+        padding: 1em;
+
+        font-weight: 600;
+
+        color: var(--ArmorWash-color);
+
+        outline: none;
+    }
+
+    input::placeholder{
+        font-weight: 700;
+
+        /* color: var(--ArmorWash-color); */
+    }
+
+    button{
+        border: none;
+        background-color: var(--JungleGreen-color);
+
+        color: var(--WhiteSmoke-color);
+
+        font-size: 16px;
+        font-weight: 700;
+
+        opacity: 0.9;
+
+        margin-bottom: 8px;
+
+        &:hover{
+            background-color: var(--LimeGreen-color);
+
+            opacity: 1;
+        }
+    }
+
+    p{
+        text-align: center;
+
+        padding: 5px 5px 0px 5px;
+
+        font-size: 13px;
+        font-weight: 630;
+    }
+
+
+}
