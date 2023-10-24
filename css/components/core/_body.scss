@@ -1,3 +1,8 @@
+/* IMPORT Noto Sans Khojki Font Family */
+@import url('https://fonts.cdnfonts.com/css/el-salvador01');
+
+/*  */
+@import url('https://fonts.cdnfonts.com/css/neck-l-sans');
 
 /* RESET */
 *{
@@ -9,4 +14,8 @@
 /* _BODY */
 body{
     background-color: var(--WhiteSmoke-color);
+
+    height: 100vh;
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
