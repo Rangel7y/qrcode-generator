@@ -1,4 +1,8 @@
 /* _VARIABLES.SCSS */
+/* IMPORT Noto Sans Khojki Font Family */
+@import url("https://fonts.cdnfonts.com/css/el-salvador01");
+/*  */
+@import url("https://fonts.cdnfonts.com/css/neck-l-sans");
 /* VARIABLES */
 :root {
   --ArmorWash-color: #030303;
@@ -6,8 +10,43 @@
   --VeryLightGrey-color: #C7C7C7;
   --KinglyCloud-color: #DEDEDE;
   --Grey-color: #787878;
+  --JungleGreen-color: #2cc76A;
+  --LimeGreen-color: #2CC762;
 }
 
+/* :root[data-theme="light"] {
+  --text: #030303;
+  --background: #f5f5f5;
+  --primary: #c7c7c7;
+  --secondary: #dedede;
+  --accent: #787878;
+}
+:root[data-theme="dark"] {
+  --text: #fcfcfc;
+  --background: #0a0a0a;
+  --primary: #383838;
+  --secondary: #212121;
+  --accent: #878787;
+
+  @media (prefers-color-scheme: light) {
+  :root {
+    --text: #030303;
+    --background: #f5f5f5;
+    --primary: #c7c7c7;
+    --secondary: #dedede;
+    --accent: #787878;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #fcfcfc;
+    --background: #0a0a0a;
+    --primary: #383838;
+    --secondary: #212121;
+    --accent: #878787;
+  }
+}
+} */
 /* _BODY.SCSS */
 /* RESET */
 * {
@@ -19,4 +58,98 @@
 /* _BODY */
 body {
   background-color: var(--WhiteSmoke-color);
-}/*# sourceMappingURL=style.css.map */
+  height: 100vh;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* _MAIN-CONTAINER.SCSS */
+/* MAIN-CONTAINER */
+#main-ctn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* _QRCODE-CONTAINER */
+/* QRCODE-CONTAINER */
+#qrcode-ctn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 370px;
+  height: 360px;
+  gap: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 8px 16px;
+  border-radius: 8px;
+  background-color: var(--VeryLightGrey-color);
+}
+
+/* QRCODE-DESCRIPTION */
+#qrcode-description h1, #qrcode-description p {
+  text-align: center;
+  color: var(--ArmorWash-color);
+}
+#qrcode-description h1 {
+  font-family: "El Salvador01", sans-serif;
+  font-size: 2.8rem;
+}
+#qrcode-description p {
+  margin: 5px;
+  font-size: 1.1rem;
+}
+
+/* QRCODE-FORM */
+#qrcode-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 325px;
+  height: 180px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 8px 16px;
+  border-radius: 8px;
+  background-color: var(--KinglyCloud-color);
+}
+#qrcode-form input, #qrcode-form button {
+  width: 90%;
+  height: 40px;
+}
+#qrcode-form input {
+  padding: 1em;
+  font-weight: 600;
+  color: var(--ArmorWash-color);
+  outline: none;
+}
+#qrcode-form input::-moz-placeholder {
+  font-weight: 700;
+  /* color: var(--ArmorWash-color); */
+}
+#qrcode-form input::placeholder {
+  font-weight: 700;
+  /* color: var(--ArmorWash-color); */
+}
+#qrcode-form button {
+  border: none;
+  background-color: var(--JungleGreen-color);
+  color: var(--WhiteSmoke-color);
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+#qrcode-form button:hover {
+  background-color: var(--LimeGreen-color);
+  opacity: 1;
+}
+#qrcode-form p {
+  text-align: center;
+  padding: 5px 5px 0px 5px;
+  font-size: 13px;
+  font-weight: 630;
+}
+
+/* _RESPONSIVE */
+/* RESPONSIVE-PAGE *//*# sourceMappingURL=style.css.map */
