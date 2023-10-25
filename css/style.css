@@ -159,6 +159,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: hidden;
   width: 370px;
   height: 300px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 8px 16px;
