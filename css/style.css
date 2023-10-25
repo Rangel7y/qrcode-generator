@@ -68,8 +68,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: 100%;
+  gap: 15px;
 }
 
 /* _QRCODE-CONTAINER */
@@ -149,6 +151,19 @@ body {
   padding: 5px 5px 0px 5px;
   font-size: 13px;
   font-weight: 630;
+}
+
+/* _QRCODE-IMAGE-CONTAINER */
+/* QRCODE-IMAGE-CONTAINER */
+#qrcode-img-ctn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 8px 16px;
+  border-radius: 8px;
+  background-color: var(--VeryLightGrey-color);
 }
 
 /* _RESPONSIVE */
