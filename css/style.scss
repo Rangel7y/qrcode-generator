@@ -4,3 +4,16 @@
 
 /* _BODY.SCSS */
 @use 'components/core/body';
+
+/* _MAIN-CONTAINER.SCSS */
+@use 'components/core/main';
+
+/* _QRCODE-CONTAINER */
+@use 'components/qrcode-ctn';
+
+/* _QRCODE-IMAGE-CONTAINER */
+@use 'components/qrcode-img-ctn';
+
+/* _RESPONSIVE */
+@use 'components/core/responsive';
+
