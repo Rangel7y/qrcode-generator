@@ -61,8 +61,6 @@ qrcodeForm.addEventListener('submit', async (event) =>{
 
     try {
         await checkQrCodeID(qrcodeInput.value)
-
-        console.log("Gerando QR CODE...");
     } catch (error) {
         console.error("Erro ao tentar gerar QR CODE fornecido:", error.message);
     }
