@@ -11,7 +11,11 @@ const qrcodeInput = document.getElementById('qrcode-input');
 const qrcodeButton = document.querySelector('#qrcode-form button');
 //
 
-/* GET ELEMENT IMG QRCODE-IMG */
+/* GET ELEMENT QRCODE-IMG-CONTENT */
+const qrcodeImgCtn = document.getElementById('qrcode-img-ctn');
+//
+
+/* GET ELEMENT QRCODE-IMG */
 const qrcodeImg = document.getElementById('qrcode-img');
 //
 
@@ -42,6 +46,8 @@ const checkQrCodeID = async(qrcodeID) => {
         qrcodeImg.addEventListener("load", () => {
 
             qrcodeButton.innerText = "QR Code gerado!";
+
+            qrcodeImgCtn.style = 'visibility: visible';
 
             console.log("QR Code gerado!");
         });
