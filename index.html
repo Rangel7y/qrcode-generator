@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,26 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>QR Code Generator</title>
+    <title>Gerador de QR Code</title>
 </head>
 <body>
-    
+    <main id="main-ctn">
+        <div id="qrcode-ctn">
+            <section id="qrcode-description">
+                <h1>GERADOR DE QR CODE</h1>
+                <p>Gere QR CODE personalizados para compartilhar informações e links de forma rápida e conveniente.</p>
+            </section>
+
+            <form id="qrcode-form">
+                <p>Insira uma URL ou texto no campo abaixo e clique em "Gerar QR Code" para criar seu QR CODE personalizado.</p>
+                <input type="text" id="qrcode-input" placeholder="Digite a URL ou texto..." required>
+                <button>Gerar QR CODE</button>
+            </form>
+        </div>
+
+        <div id="qrcode-img-ctn">
+            <img src="#" alt="Imagem do QR Code" id="qrcode-img">
+        </div>
+    </main>
 </body>
 </html>
