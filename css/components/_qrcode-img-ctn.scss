@@ -1,0 +1,15 @@
+
+/* QRCODE-IMAGE-CONTAINER */
+#qrcode-img-ctn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 370px;
+    height: 300px;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 8px 16px;
+    border-radius: 8px;
+
+    background-color: var(--VeryLightGrey-color);
+}
