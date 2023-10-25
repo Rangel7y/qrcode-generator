@@ -8,7 +8,7 @@ const qrcodeInput = document.getElementById('qrcode-input');
 //
 
 /* UNFINISHED */
-const qrcodeButton = document.getElementById('qrcode-form button');
+const qrcodeButton = document.querySelector('#qrcode-form button');
 //
 
 /* GET ELEMENT IMG QRCODE-IMG */
@@ -35,7 +35,16 @@ const checkQrCodeID = async(qrcodeID) => {
     console.log(data);
 
     if(!("erro" in data)){
+        qrcodeButton.innerText = "Gerando QR Code...";
+
         qrcodeImg.src = data.url;
+
+        qrcodeImg.addEventListener("load", () => {
+
+            qrcodeButton.innerText = "QR Code gerado!";
+
+            console.log("QR Code gerado!");
+        });
     }
 }
 //
